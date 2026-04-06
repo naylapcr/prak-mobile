@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("age", 25)
 
             startActivity(intent)
-            startActivity(intent)
+            finish()
         }
     }
 }
