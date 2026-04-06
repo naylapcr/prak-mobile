@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.naylaapps.R
+import com.example.naylaapps.databinding.ActivityFourthBinding
 
 class FourthActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
