@@ -12,18 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NaylaApps">
         <activity
-            android:name=".pertemuan_2.SecondActivity"
+            android:name=".pertemuan_4.FourthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"/>
+<!--        <activity-->
+<!--            android:name=".MainActivity"-->
+<!--            android:exported="false" />-->
     </application>
 
 </manifest>
