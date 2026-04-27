@@ -25,8 +25,8 @@ class FifthActivity : AppCompatActivity() {
         // 1. Setup Toolbar (Sesuai Modul)
         setSupportActionBar(binding.toolbar)
         supportActionBar?.apply {
-            title = "Activity Fifth"
-            subtitle = "Ini adalah Subtitle"
+            title = "Dashboard"
+            subtitle = "Ini Dashboard"
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
             setHomeAsUpIndicator(R.drawable.ic_arrow_back)

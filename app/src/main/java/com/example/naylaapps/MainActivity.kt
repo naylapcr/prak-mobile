@@ -13,6 +13,7 @@ import com.example.naylaapps.databinding.ActivityMainBinding
 import com.example.naylaapps.pertemuan_2.SecondActivity
 import com.example.naylaapps.pertemuan_4.FourthActivity
 import com.example.naylaapps.pertemuan_5.FifthActivity
+import com.example.naylaapps.pertemuan_7.SeventhActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class MainActivity : AppCompatActivity() {
@@ -31,13 +32,7 @@ class MainActivity : AppCompatActivity() {
         //kode ini harus selalu dipanggil; saat butuh akses user_pref
         val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
 
-        setSupportActionBar(binding.toolbar)
-        supportActionBar?.apply {
-            title = "Activity Fifth"
-            subtitle = "Ini adalah subtitle"
-            setDisplayHomeAsUpEnabled(true)
-            setDisplayShowHomeEnabled(true)
-        }
+
 
         binding.btnToSecond.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
@@ -74,6 +69,11 @@ class MainActivity : AppCompatActivity() {
                     dialog.dismiss()
                 }
                 .show()
+        }
+
+        binding.btnToSeventh.setOnClickListener {
+            val intent = Intent(this, SeventhActivity::class.java)
+            startActivity(intent)
         }
 
     }
