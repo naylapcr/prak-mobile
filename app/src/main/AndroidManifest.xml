@@ -14,7 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NaylaApps">
         <activity
-            android:name=".pertemuan_7.SeventhActivity"
+            android:name=".BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.pertemuan_7.SeventhActivity"
             android:exported="false" />
         <activity
             android:name=".AuthActivity"
@@ -23,13 +26,13 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan_5.WebViewActivity"
+            android:name=".Home.pertemuan_5.WebViewActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan_5.FifthActivity"
+            android:name=".Home.pertemuan_5.FifthActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan_4.FourthActivity"
+            android:name=".Home.pertemuan_4.FourthActivity"
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"

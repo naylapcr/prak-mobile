@@ -2,18 +2,16 @@ package com.example.naylaapps
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.view.MenuItem
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.edit
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.naylaapps.databinding.ActivityMainBinding
-import com.example.naylaapps.pertemuan_2.SecondActivity
-import com.example.naylaapps.pertemuan_4.FourthActivity
-import com.example.naylaapps.pertemuan_5.FifthActivity
-import com.example.naylaapps.pertemuan_7.SeventhActivity
+import com.example.naylaapps.Home.pertemuan_2.SecondActivity
+import com.example.naylaapps.Home.pertemuan_4.FourthActivity
+import com.example.naylaapps.Home.pertemuan_5.FifthActivity
+import com.example.naylaapps.Home.pertemuan_7.SeventhActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class MainActivity : AppCompatActivity() {

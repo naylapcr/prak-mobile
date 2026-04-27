@@ -2,16 +2,12 @@ package com.example.naylaapps
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.edit
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.naylaapps.databinding.ActivityAuthBinding
-import com.example.naylaapps.pertemuan_2.SecondActivity
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 
 class AuthActivity : AppCompatActivity() {
@@ -40,7 +36,7 @@ class AuthActivity : AppCompatActivity() {
                     putBoolean("isLogin", true)
                     putString("username", username)
                 }
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, BaseActivity::class.java)
                 startActivity(intent)
 
             }else
