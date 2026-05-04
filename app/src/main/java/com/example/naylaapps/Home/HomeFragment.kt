@@ -14,6 +14,7 @@ import com.example.naylaapps.Home.pertemuan_2.SecondActivity
 import com.example.naylaapps.Home.pertemuan_4.FourthActivity
 import com.example.naylaapps.Home.pertemuan_5.FifthActivity
 import com.example.naylaapps.Home.pertemuan_7.SeventhActivity
+import com.example.naylaapps.Home.pertemuan_9.NinthActivity
 import com.example.naylaapps.R
 import com.example.naylaapps.databinding.FragmentHomeBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -80,6 +81,10 @@ class HomeFragment : Fragment() {
 
         binding.btnToSeventh.setOnClickListener {
             val intent = Intent(requireContext(), SeventhActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnToNinth.setOnClickListener {
+            val intent = Intent(requireContext(), NinthActivity::class.java)
             startActivity(intent)
         }
         super.onViewCreated(view, savedInstanceState)
