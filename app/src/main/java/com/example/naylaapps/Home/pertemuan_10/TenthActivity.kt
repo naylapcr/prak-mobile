@@ -18,6 +18,7 @@ class TenthActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         binding = ActivityTenthBinding.inflate(layoutInflater)
+
         setContentView(binding.root)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -60,6 +61,9 @@ class TenthActivity : AppCompatActivity() {
                     val badge = tab.getOrCreateBadge()
                     badge.isVisible = true
                     badge.number = 5
+                }
+                2 -> {
+                    tab.text = "Tab C"
                 }
             }
         }.attach()
