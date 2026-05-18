@@ -33,9 +33,9 @@
         android:id="@+id/btnMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="Pertemuan 4"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#83CABF"
+        android:text="Pertemuan 4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,9 +50,9 @@
         android:id="@+id/btnToSecond"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="pertemuan 2"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#F2B5CA"
+        android:text="pertemuan 2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,10 +62,10 @@
         android:id="@+id/btnToFifth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#ECA8F8"
         android:text="pertemuan 5"
         app:layout_anchor="@+id/btnMain"
-        android:backgroundTint="#ECA8F8"
         app:layout_anchorGravity="end|bottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -76,24 +76,25 @@
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="156dp"
         android:backgroundTint="#C82E29"
         android:text="Logout"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnToNinth"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnToTenth"
+        app:layout_constraintVertical_bias="0.402" />
 
     <Button
         android:id="@+id/btnToSeventh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#8EBDEF"
         android:text="Pertemuan 7"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnToFifth" />
 
@@ -111,10 +112,22 @@
         android:id="@+id/btnToNinth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:text="Pertemuan 9"
+        android:backgroundTint="#f1bb5b"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnToSeventh" />
+
+    <Button
+        android:id="@+id/btnToTenth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Pertemuan 10"
+        android:backgroundTint="#f080ca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnToNinth" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
