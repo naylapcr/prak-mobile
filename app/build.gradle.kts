@@ -1,16 +1,15 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.devtools.ksp)
+}
+
+kotlin {
+    jvmToolchain(17)
 }
 
 android {
     namespace = "com.example.naylaapps"
-    compileSdk {
-        version = release(36)
-    }
-
-    buildFeatures{
-        viewBinding = true
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.naylaapps"
@@ -32,8 +31,12 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    buildFeatures {
+        viewBinding = true
     }
 }
 
@@ -46,6 +49,9 @@ dependencies {
     implementation(libs.google.material)
     implementation(libs.androidx.gridlayout)
     implementation(libs.androidx.viewpager2)
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

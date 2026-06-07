@@ -12,6 +12,7 @@ import com.example.naylaapps.Home.pertemuan_2.SecondActivity
 import com.example.naylaapps.Home.pertemuan_4.FourthActivity
 import com.example.naylaapps.Home.pertemuan_5.FifthActivity
 import com.example.naylaapps.Home.pertemuan_7.SeventhActivity
+import com.example.naylaapps.Note.NoteListActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class MainActivity : AppCompatActivity() {
@@ -71,6 +72,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnToSeventh.setOnClickListener {
             val intent = Intent(this, SeventhActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnToNotes.setOnClickListener {
+            val intent = Intent(this, NoteListActivity::class.java)
             startActivity(intent)
         }
 

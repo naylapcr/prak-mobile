@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.naylaapps.Home.HomeFragment
 import com.example.naylaapps.Message.MessageFragment
 import com.example.naylaapps.More.MoreFragment
+import com.example.naylaapps.Note.NoteFragment
 import com.example.naylaapps.databinding.ActivityBaseBinding
 
 class BaseActivity : AppCompatActivity() {
@@ -34,6 +35,10 @@ class BaseActivity : AppCompatActivity() {
                 }
                 R.id.message -> {
                     replaceFragment(MessageFragment())
+                    true
+                }
+                R.id.note -> {
+                    replaceFragment(NoteFragment())
                     true
                 }
                 R.id.more -> {
