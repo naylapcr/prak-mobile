@@ -20,6 +20,7 @@ import com.example.naylaapps.Home.pertemuan_9.NinthActivity
 import com.example.naylaapps.R
 import com.example.naylaapps.data.api.CatFactApiClient
 import com.example.naylaapps.databinding.FragmentHomeBinding
+import com.example.naylaapps.pertemuan_13.ThirteenActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.launch
 
@@ -94,6 +95,12 @@ class HomeFragment : Fragment() {
 
         binding.btnToTenth.setOnClickListener {
             val intent = Intent(requireContext(), TenthActivity::class.java)
+            startActivity(intent)
+
+        }
+
+        binding.btnToThirteen.setOnClickListener {
+            val intent = Intent(requireContext(), ThirteenActivity::class.java)
             startActivity(intent)
 
         }
