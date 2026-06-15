@@ -1,11 +1,8 @@
-package com.example.naylaapps.pertemuan_13
+package com.example.naylaapps.Home.pertemuan_13
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.naylaapps.Home.pertemuan_10.TabAFragment
-import com.example.naylaapps.Home.pertemuan_10.TabBFragment
-import com.example.naylaapps.Home.pertemuan_10.TabCFragment
 
 class ThirteenthTabsAdapter(activity: FragmentActivity) : FragmentStateAdapter(activity) {
 

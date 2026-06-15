@@ -3,9 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
 
     <application
@@ -17,6 +25,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NaylaApps">
+        <activity
+            android:name=".Home.pertemuan_3.ThirdResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.pertemuan_3.ThirdActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".utils.ReminderReceiver"
+            android:exported="false"/>
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -29,7 +47,7 @@
         </provider>
 
         <activity
-            android:name=".pertemuan_13.ThirteenActivity"
+            android:name=".Home.pertemuan_13.ThirteenActivity"
             android:exported="false" />
         <activity
             android:name=".Note.NoteFormActivity"
@@ -77,7 +95,5 @@
             </intent-filter>
         </activity>
     </application>
-
-
 
 </manifest>

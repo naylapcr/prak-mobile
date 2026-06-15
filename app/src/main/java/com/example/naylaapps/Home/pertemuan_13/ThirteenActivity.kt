@@ -1,4 +1,4 @@
-package com.example.naylaapps.pertemuan_13
+package com.example.naylaapps.Home.pertemuan_13
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -7,9 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.naylaapps.Home.pertemuan_10.TenthTabsAdapter
 import com.example.naylaapps.R
-import com.example.naylaapps.databinding.ActivityTenthBinding
 import com.example.naylaapps.databinding.ActivityThirteenBinding
 import com.google.android.material.tabs.TabLayoutMediator
 

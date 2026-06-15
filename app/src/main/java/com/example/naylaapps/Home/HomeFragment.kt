@@ -17,10 +17,10 @@ import com.example.naylaapps.Home.pertemuan_4.FourthActivity
 import com.example.naylaapps.Home.pertemuan_5.FifthActivity
 import com.example.naylaapps.Home.pertemuan_7.SeventhActivity
 import com.example.naylaapps.Home.pertemuan_9.NinthActivity
-import com.example.naylaapps.R
 import com.example.naylaapps.data.api.CatFactApiClient
 import com.example.naylaapps.databinding.FragmentHomeBinding
-import com.example.naylaapps.pertemuan_13.ThirteenActivity
+import com.example.naylaapps.Home.pertemuan_13.ThirteenActivity
+import com.example.naylaapps.Home.pertemuan_3.ThirdActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.launch
 
@@ -50,6 +50,10 @@ class HomeFragment : Fragment() {
         binding.btnToSecond.setOnClickListener {
             val intent = Intent(requireContext(), SecondActivity::class.java)
             startActivity(intent)
+        }
+
+        binding.btnToThird.setOnClickListener {
+            startActivity(Intent(requireContext(), ThirdActivity::class.java))
         }
 
         binding.btnMain.setOnClickListener {

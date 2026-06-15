@@ -1,4 +1,4 @@
-package com.example.naylaapps.pertemuan_13
+package com.example.naylaapps.Home.pertemuan_13
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -16,6 +16,7 @@ import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
 import com.example.naylaapps.databinding.FragmentTabScanBinding
+import com.example.naylaapps.utils.PermissionHelper
 import com.google.mlkit.vision.barcode.BarcodeScanner
 import com.google.mlkit.vision.barcode.BarcodeScannerOptions
 import com.google.mlkit.vision.barcode.BarcodeScanning
@@ -50,21 +51,20 @@ class TabScanFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        
-        cameraExecutor = Executors.newSingleThreadExecutor()
-        
-        // Inisialisasi scanner khusus QR Code
-        val options = BarcodeScannerOptions.Builder()
-            .setBarcodeFormats(Barcode.FORMAT_QR_CODE)
-            .build()
-        scanner = BarcodeScanning.getClient(options)
 
-        if (hasCameraPermission()) {
-            startCamera()
-        } else {
-            permissionLauncher.launch(Manifest.permission.CAMERA)
+        cameraExecutor = Executors.newSingleThreadExecutor()
+
+            if (!PermissionHelper.hasPermission(
+                    requireActivity(),
+                    Manifest.permission.CAMERA)) {
+                PermissionHelper.requestPermission(
+                    permissionLauncher,
+                    Manifest.permission.CAMERA
+                )
+            } else {
+                startCamera()
+            }
         }
-    }
 
     // Hapus binding & matikan scanner saat view dihancurkan untuk mencegah memory leak
     override fun onDestroyView() {
